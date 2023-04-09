@@ -12,7 +12,7 @@ kangxiatao.love[Hexo + GitHub Pages](https://www.kangxiatao.love/2021/06/28/22/c
 
 Github把百度墙了，可用vercel+自己的域名
 
-Hexo的icarus主题网站验证添加在```blog\themes\icarus\layout\common\head.jsx```中
+Hexo的icarus主题网站验证添加在```\layout\common\head.jsx```中
 
 ## 分支问题
 
@@ -26,6 +26,12 @@ deploy:
     github: git@github.com:kangxiatao/kangxiatao.github.io.git,main
     # gitee: https://gitee.com/kangxiatao/kangxiatao.git
 ```
+
+## 主题问题
+
+自定义图片，在```source```中
+
+鼠标动效，```source```中的js，另外```layout\layout.jsx```做修改
 
 ## 吐槽
 
