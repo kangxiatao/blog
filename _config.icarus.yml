@@ -245,7 +245,8 @@ widgets:
             豆瓣:
                 # icon: iconfont  icon-douban
                 icon: fab fa-imdb
-                url: 'https://www.douban.com/people/anoi/'
+                # url: 'https://www.douban.com/people/anoi/'
+                url: 'https://www.douban.com/note/805265856/?_i=1139058bD6xwM8'
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar

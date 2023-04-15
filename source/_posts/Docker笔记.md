@@ -15,32 +15,71 @@ toc: true
 
 <!--more-->
 
+
 ## docker note
 
 ### 镜像和容器操作
 
 - 移除镜像
+
     ```docker rmi 85e62d9e0586```
 
 - 打包容器
+
     ```docker commit 7b2d0ec9a289 deepidea:kxt```
 
 - 保存镜像
+
     ```docker save > synergy.tar deepidea:synergy```
+
+
+### 集群
+
+部分指令
+
+```
+# 创建swarm
+docker swarm init --advertise-addr=192.168.1.30
+# 获取新的token标记文本
+docker swarm join-token manager
+# 查看节点列表
+docker node ls 
+# 离开集群
+docker swarm leave --force
+```
+
+示例
+```
+# 创建swarm
+docker swarm init --advertise-addr=192.168.1.30
+# 超过24小时需要重新获取token
+docker swarm join-token manager
+# 用输出的token加入到swarm
+pass
+# 为容器建立集群网络
+docker network create --driver=overlay --attachable my-overlay-net
+# docker run时选到集群网络中即可
+pass
+```
 
 ### 其他
 
 - 访问权限
+
     ```xhost local:root```  ```xhost +```
 
 - 新建容器命令行
+
     ```docker exec -it melodic_world bash```
 
 - 获取容器长ID
+
     ```docker inspect -f '{{.ID}}' px4_test```
 
 - 复制文件到docker中
+
     ```docker cp 文件路径 容器长ID:容器文件路径```
+
 
 ### dockerfile
 
@@ -90,43 +129,45 @@ sudo systemctl restart docker
 - test
 
     ```
-    source /etc/profile
+    # 启动仿真
     roslaunch synergy multi_vehicle_v1.launch
     
+    # 无人机控制
     docker exec -it px4_test bash
-    source /etc/profile
     cd ~/catkin_ws/src/synergy/scripts/
     python3 control_mul.py 
 
+    # 无人车控制
     docker exec -it px4_test bash
-    source /etc/profile
     cd ~/catkin_ws/src/synergy/scripts/self_driving/
-    sudo apt-get install python-tk
     python2 ugv_hector_driving.py 
 
+    # 图传和轨迹
     docker exec -it px4_test bash
     rviz rviz
     ```
 
 - 换源
+
     ```-i https://pypi.tuna.tsinghua.edu.cn/simple```
 
 - PX4 1.13版本修改
+
     ```https://blog.csdn.net/weixin_44537885/article/details/125946076```
 
 - gazebo问题
-    我直接把本地dev全给他映射过去```--volume="/dev:/dev"```
 
-    报错参考：
-      ```export LIBGL_ALWAYS_INDIRECT=1```
-      ```sudo apt install libnvidia-gl-525```
+    ```export LIBGL_ALWAYS_INDIRECT=1```
+    ```sudo apt install libnvidia-gl-525```
 
 ## linux note
 
 - 权限
+
     ```chmod 777 install.sh```
 
 - 当前路径
+
     ```pwd```
 
 - 环境变量问题
