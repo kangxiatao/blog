@@ -27,9 +27,11 @@ toc: true
 
 ## 想法
 
-- 压缩
+- 压缩和加速
 
     Alpaca-Lora
+
+    Deep Speed Chat
 
 - 翻译
 
@@ -55,7 +57,7 @@ OpenAI的ChatGPT到了人尽皆知的地步，说的搞笑一点，做ChatGPT的
 
     最开始还只是用在搜索引擎上，所谓New Bing。现在已经嵌入到微软全家桶了，称为Copilot，目前来说微软的布局是无敌的。
 
-    Copilot也是一个[代码助手](https://github.com/features/copilot)
+    Copilot也是一个[代码助手](https://github.com/features/copilot)。
 
 - 实用的工具
 
@@ -79,7 +81,7 @@ OpenAI的ChatGPT到了人尽皆知的地步，说的搞笑一点，做ChatGPT的
 
     - [Paperade](https://www.paperade.co/)
 
-        提供创意、想法和建议
+        从论文中搜索创意和想法，用起来一般，论文含金量低。
 
     - 基于ChatGPT的一些办公服务
 
@@ -137,7 +139,7 @@ OpenAI的ChatGPT到了人尽皆知的地步，说的搞笑一点，做ChatGPT的
 
 ### [ERNIE-ViLG AI](https://wenxin.baidu.com/ernie-vilg)
 
-文兴
+文心
 
 ### [Draft](https://draft.art/drawing)
 
