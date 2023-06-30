@@ -95,11 +95,11 @@ toc: true
 
 ## 可行方向
 
-![可行方向分析](https://s3.bmp.ovh/imgs/2023/04/16/55604bf5ada98189.jpeg)
+![](https://s3.bmp.ovh/imgs/2023/04/16/55604bf5ada98189.jpeg)
 
 ## 发展规划
 
-![发展规划](https://s3.bmp.ovh/imgs/2023/04/16/819e8bb74b4e2dc8.jpeg)
+![](https://s3.bmp.ovh/imgs/2023/04/16/819e8bb74b4e2dc8.jpeg)
 
 - 软件产品
 	- 服务平台

@@ -24,7 +24,7 @@ toc: true
 
 ### 理解词语
 
-- 词向量
+- 词向量（word2vec）
     把词映射到空间中，根据夹角、距离和长短等判断词的相似性。
 
 - Continuous Bag of Words (CBOW)
@@ -115,4 +115,40 @@ Attention机制最早提出是在视觉领域，2014年Google Mind发表了《Re
 
     Transformer也是由 Encoder-Decoder 结构组成，但不是RNN中的Encoder-Decoder，简单说就是直接对词向量使用注意力。(Query, Key, Value)
 
-    参考：[The Illustrated Transformer]([https://link](http://jalammar.github.io/illustrated-transformer/))
+    - 关于位置编码
+
+        普通的Transformer是余弦+正弦的方式表示。后续看到不少模型对位置编码做出调整的，个人还没有做过实验和论证，感觉差别不大。
+
+## 优异模型
+
+- ELMo
+
+    预训练一个双向的 LSTM 语言模型，解决一词多义问题。
+
+- GPT（Generative Pre-Training）
+
+    GPT用了Transformer的decoder部分，初代是训练+微调的二段式策略，后面主推一个Zero-Shot。
+
+    GPT中的位置编码是要学习的。后续更多的调整我认为可以看作训练的trick。
+
+- BERT（Bidirectional Encoder Representation from Transformers）
+
+    BERT则用Transformer的encoder部分堆叠，位置编码同样要学习，embeddings包括了Token、Segment和Position。
+
+    BERT 的表现是里程碑式的。
+
+- BART（Bidirectional and Auto-Regressive Transformers）
+
+    BART可以看做是BERT与GPT结合的降噪自编码器，是使用Transformer模型整体结构的预训练语言模型。
+
+- T5（Text-to-Text Transfer Transformer）
+
+    T5 同样采用Encoder-Decoder Transformer结构，但是位置编码加在注意力层之后。
+
+- GLM（General Language Model）
+
+    开源做得非常好。
+
+- RWKV
+
+    架构上跟transformer一脉相承，但改成了linear attention，于是写成RNN的形式。目前来说表现挺优异，也提了许多trick，挺看好的。

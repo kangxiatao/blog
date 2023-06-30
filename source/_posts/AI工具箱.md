@@ -99,6 +99,12 @@ OpenAI的ChatGPT到了人尽皆知的地步，说的搞笑一点，做ChatGPT的
 
     因为Google和Bing不是一个量级，谷歌部署Bard的成本远大于微软的New Bing，后续的Bard也是备受争议。
 
+### [LLaMA](https://arxiv.org/abs/2302.13971v1)
+
+Meta AI最新发布的大语言模型
+
+现在基于LLaMA的研究和应用已经不可胜数了。
+
 ### [文心一言](https://yiyan.baidu.com/)
 
 百度，需要申请资格
@@ -145,7 +151,7 @@ OpenAI的ChatGPT到了人尽皆知的地步，说的搞笑一点，做ChatGPT的
 
 基于Stable Diffusion的AI绘图
 
-### 绘画模型和应用太多了，我也不是和了解
+### 绘画模型和应用太多了，我也不是很了解
 
 ## AI建模，AI视频
 
