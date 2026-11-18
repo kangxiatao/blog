@@ -1,6 +1,7 @@
 ---
 title: hello-myblog
 date: 2021-06-28 22:42:02
+updated: 2021-06-28 22:42:02
 categories: xx
 toc: true
 tags:

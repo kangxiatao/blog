@@ -1,6 +1,7 @@
 ---
 title: AI市场调研
 date: 2023-04-16 12:13:23
+updated: 2023-04-16 12:13:23
 categories: 浮生日记
 tags:
   - 人工智能

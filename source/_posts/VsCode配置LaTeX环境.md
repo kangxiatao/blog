@@ -1,6 +1,7 @@
 ---
 title: VsCode配置LaTeX环境
 date: 2021-06-30 23:10:52
+updated: 2021-06-30 23:10:52
 categories: 码农笔记
 tags:
   - VsCode

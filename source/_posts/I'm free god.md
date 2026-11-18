@@ -1,6 +1,7 @@
 ---
 title: 深度学习平台, I'm Free God !
 date: 2021-09-10 18:43:46
+updated: 2021-09-10 18:43:46
 categories: 码农笔记
 tags:
   - 深度学习平台

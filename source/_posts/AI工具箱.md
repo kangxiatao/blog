@@ -1,6 +1,7 @@
 ---
 title: AI工具箱
 date: 2023-04-15 16:40:45
+updated: 2023-04-15 16:40:45
 categories: 浮生日记
 tags:
   - AI工具

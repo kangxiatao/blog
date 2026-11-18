@@ -1,6 +1,7 @@
 ---
 title: ROS与Gazebo联合仿真平台搭建
 date: 2023-03-14 13:30:00
+updated: 2023-03-14 13:30:00
 categories: 码农笔记
 tags:
   - ROS

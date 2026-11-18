@@ -3,11 +3,11 @@ version: 5.1.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: /img/logo.svg
+logo: /img/site-logo.svg
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: /img/favicon.svg
+    favicon: /img/site-favicon.svg
     # URL or path to the website's icon
     manifest:
         # Name of the web application (default to the site title)
@@ -47,7 +47,7 @@ head:
         url: 
         # Page cover (og:image) (optional)
         # You should leave this blank for most of the time
-        image: 
+        image: /img/site-og-image.png
         # Site name (og:site_name) (optional)
         # You should leave this blank for most of the time
         site_name: 
@@ -226,7 +226,7 @@ widgets:
         # Author's current location
         location: 地球，银河系，C137宇宙
         # URL or path to the avatar image
-        avatar:
+        avatar: /img/site-avatar.png
         # Whether show the rounded avatar image
         avatar_rounded: false
         # Email address for the Gravatar
